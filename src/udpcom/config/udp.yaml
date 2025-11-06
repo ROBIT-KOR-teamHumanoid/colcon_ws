@@ -1,0 +1,6 @@
+# ROS2 Parameters
+/**:
+  ros__parameters:
+    identifier: "robit2"
+    multicast_address: "239.255.0.1"
+    port: 9090
