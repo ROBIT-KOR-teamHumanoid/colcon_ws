@@ -30,3 +30,7 @@ ros2 launch ebimu e2box_imu_9dofv4.launch.py
 **master**
 
 ros2 launch robocup_master25 robocup_master25.launch.py
+
+**local**
+
+ros2 run robocup_localization25 robocup_localization25
