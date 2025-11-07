@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Robocup_Localization25</string>
+   <string>Robocup_Localization23</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -43,7 +43,7 @@ color: rgb(238, 238, 236);</string>
      </font>
     </property>
     <property name="text">
-     <string>Robocup_Localization25</string>
+     <string>Robocup_Localization24</string>
     </property>
    </widget>
    <widget class="QGraphicsView" name="screen">
@@ -102,7 +102,7 @@ color: rgb(238, 238, 236);</string>
      </font>
     </property>
     <property name="text">
-     <string>VERSION 9.0</string>
+     <string>VERSION 8.0</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
