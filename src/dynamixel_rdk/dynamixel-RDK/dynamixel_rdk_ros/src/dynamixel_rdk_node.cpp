@@ -204,13 +204,13 @@ void DynamixelRDKNode::dynamixel_control_callback(
   dynamixel_ctrl_->sync_write(goal_positions, goal_velocities, goal_accelerations);
 }
 
-void DynamixelRDKNode::dynamixel_callback(
-  const dynamixel_rdk_msgs::msg::DynamixelMsgs::SharedPtr msg)
-{
-  for (auto & motor : msg->motor) {
-    dynamixel_ctrl_->single_write(static_cast < uint8_t > 22, motor.goal_position, motor.profile_velocity,motor.profile_acceleration);
-  }
-}
+// void DynamixelRDKNode::dynamixel_callback(
+//   const dynamixel_rdk_msgs::msg::DynamixelMsgs::SharedPtr msg)
+// {
+//   for (auto & motor : msg->motor) {
+//     dynamixel_ctrl_->single_write(static_cast < uint8_t > 22, motor.goal_position, motor.profile_velocity,motor.profile_acceleration);
+//   }
+// }
 
 void DynamixelRDKNode::dynamixel_status_publish()
 {
