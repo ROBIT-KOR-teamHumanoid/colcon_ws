@@ -27,6 +27,8 @@ void IK_Solve::init_save()
   }
   g_DXL_ID_position[22] = 496 * 4;
   g_DXL_ID_Save_position[22] = 496 * 4;
+  g_DXL_ID_position[23] = 496 * 4;
+  g_DXL_ID_Save_position[23] = 496 * 4;
 cout << "g_DXL_ID_Save_position[" << 22 << "] = " << (g_DXL_ID_Save_position[22] / 4) << endl;
 
 }
@@ -396,7 +398,7 @@ void IK_Solve::motor_packet(int body, int limit)
 
   if (body == Leg)
   {
-    for(int i=0; i< 5; i++)
+    for(int i=0; i< 2; i++)
     {
       double radpos = ((static_cast<double>(g_DXL_ID_position[i])) / 4096) * (2 * M_PI) - M_PI;
 
@@ -406,7 +408,7 @@ void IK_Solve::motor_packet(int body, int limit)
     }
 
   }
-  for(int i = body ; i < 23 ; i++)
+  for(int i = body ; i < 24 ; i++)
   {
     double radpos = ((static_cast<double>(g_DXL_ID_position[i])) / 4096) * (2 * M_PI) - M_PI;
 
