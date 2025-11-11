@@ -59,7 +59,7 @@ private:  // Private Functions
   void get_parameters();
 
   void dynamixel_control_callback(const dynamixel_rdk_msgs::msg::DynamixelControlMsgs & msg);
-  void dynamixel_callback(const dynamixel_rdk_msgs::msg::DynamixelMsgs::SharedPtr msg);
+  // void dynamixel_callback(const dynamixel_rdk_msgs::msg::DynamixelMsgs::SharedPtr msg);
 
   void dynamixel_status_publish();
 
