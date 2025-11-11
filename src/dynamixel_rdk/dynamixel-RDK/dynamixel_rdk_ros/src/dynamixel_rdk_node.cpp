@@ -46,8 +46,8 @@ DynamixelRDKNode::on_configure(const rclcpp_lifecycle::State &)
     control_topic_.c_str(), 10,
     std::bind(&DynamixelRDKNode::dynamixel_control_callback, this, std::placeholders::_1));
 
-  dynamixel_sub_ = create_subscription<dynamixel_rdk_msgs::msg::DynamixelMsgs>(
-    "pan_dxl", 10, std::bind(&DynamixelRDKNode::dynamixel_callback, this, std::placeholders::_1));
+  // dynamixel_sub_ = create_subscription<dynamixel_rdk_msgs::msg::DynamixelMsgs>(
+  //   "pan_dxl", 10, std::bind(&DynamixelRDKNode::dynamixel_callback, this, std::placeholders::_1));
 
   try {
     dynamixel_ctrl_ = std::make_shared<DynamixelCtrl>(
